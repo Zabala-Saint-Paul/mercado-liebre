@@ -4,7 +4,9 @@
 }
 
 
-
+.fondo-gris{
+    background-color: #ebebeb;
+}
 body{
     font-family: 'Roboto', sans-serif;
     width: 100vw;
@@ -193,6 +195,9 @@ footer p{
 }
 
 @media  only screen and (max-width:362px) {
+    
+   
+   
     .descripcion{
                 display:none ;
     }
@@ -206,7 +211,7 @@ footer p{
         width:150px;
         border: none;
         border-radius: 8px;
-        margin-right: 0 !important;
+        margin: 0 !important;
     }
 
     .buscador-btn{
@@ -214,7 +219,7 @@ footer p{
         color: grey;
         border: none;
         border-radius: 8px;
-        margin-left: 0 !important;
+        margin: 0 !important;
     }
 
     .copy-header{
@@ -235,18 +240,146 @@ footer p{
     .product-card{
         background-color: white;
         margin:13px;
+        box-shadow: 0px 0px 10px rgb(100, 100, 100);
     }
     .p-container{
         display: flex;
         justify-content: space-evenly;
         flex-wrap: wrap; 
     }
+    .product-data{
+        display: flex;
+        flex-direction: column;
+
+    }
+    .logo-envio{
+        align-self: flex-end;
+        margin-right:20px;
+        margin-top: 0;
+        margin-bottom: 0;
+        box-shadow: 0px 0px 10px rgba(104, 212, 162, 0.507);
+        
+    }
+    .precio-descuento{
+        display: inline;
+        text-align: left;
+        
+    }
+    
+
+    .precios{
+        font-size: 15px;
+        font-weight: bold;
+        display: inline;
+        margin: 20px;
+    }
+    .descuentos{
+        font-size: 13px;
+        font-weight: bold;
+        display: inline;
+        margin: 20px;
+    }
+
+/*------------Estilos Login y Register----------------*/
+    
+    .control-formulario .nombre1{
+        width: 100%;
+        padding: 8px;
+        border-radius: 8px;
+        border: none;
+        font-size: 13px;
+        color:#0808088c;
+    }
+
+    .control-formulario .boton-up-file{
+        display: none;
+    }
+    .control-formulario .boton-up-file-fake{
+        background-color:#1259c3 ;
+        border-radius: 8px;
+        color: white;
+        padding: 5px 10px;
+    }
+    .control-formulario .interes{
+          
+        display:block;
+        flex-direction: column;
+        justify-content: center;
+        margin: 0px;
+        width: 50%;
+        margin-left: 25%;
+        border-radius: 8px;
+        text-align: left;
+        color:#666;
+    }
+    .create-form .boton-formulario{
+        background-color:#1259c3; ;
+        border: none;
+        font-size: 15px;
+        color:#ffffff;
+        padding: 5px 10px;
+        border-radius: 8px;
+        width: 100%;
+        margin: 0px 0px 10px 0px;
+    }
+
+    .compra-venta{
+        color: #666;
+    }
+
+    .titulo-formulario{
+        font-size: 14px;
+        color:#666;
+    }
+    /*---------------------Footer--------------------------*/
+
+
+    footer{
+        text-align: center;
+        background-color: white;
+        font-family: 'Roboto', sans-serif;
+        margin-top: 1em;
+    }
+    
+    
+    footer h2{
+        color:#666;
+        font-size: 15px; 
+    }
+    
+    footer p{
+        color:#0808088c;
+        
+    }
+    
+    
+    .logo-footer{
+        color:#1259c3;
+        margin-bottom:10px;
+        font-size: 1em;
+    }
+    
+    .p-footer{
+        margin-bottom:3em;
+        font-size: 13px; 
+    }
+
+    .copyright{
+        font-size: 13px;
+        color:#0808088c;
+
+    }
+    
     
 }
 
 
 @media  (min-width:362px) and (max-width:768px){
    
+    main{
+        width: 100%;
+    }
+
     .p-container{
         display: flex;
         justify-content: space-evenly;
@@ -256,7 +389,7 @@ footer p{
     .img-producto{
         width: 250px;
         height: 250px;
-        box-shadow : 0px 0px 10px rgb ( 100 , 100 , 100 );
+        box-shadow : 0px 0px 10px rgb( 100 , 100 , 100 );
     }
 
     .titulares{
@@ -292,14 +425,16 @@ footer p{
     }
 
     .main-navbar li{
-        margin: 0 15px;
+        margin: 0 3px;
         
     }
     .descripcion{
                 display:contents;
                 font-size: 13px;
-                align-self: flex-end;
-                background-color: lime;
+                text-align: left;
+                font-weight: bold;
+                color:#0808088c; 
+
     }
    
 
@@ -351,16 +486,22 @@ footer p{
         flex-direction: column;
 
     }
+
+    
     .logo-envio{
         align-self: flex-end;
         margin-right:20px;
         margin-top: 0;
         margin-bottom: 0;
+        box-shadow: 0px 0px 10px rgba(104, 212, 162, 0.507);
+        
+        text-align: center;
         
     }
     .precio-descuento{
         display: inline;
         text-align: left;
+
         
     }
     
@@ -369,22 +510,118 @@ footer p{
         font-size: 15px;
         display: inline;
         margin: 20px;
+        font-weight: bold;
     }
     .descuentos{
         font-size: 13px;
         font-weight: bold;
         display: inline;
         margin: 20px;
+        font-weight: bold;
+    }
+    /*------------Estilos Login y Register----------------*/
+    
+    .control-formulario .nombre1{
+        width: 100%;
+        padding: 8px;
+        border-radius: 8px;
+        border: none;
+        font-size: 13px;
+        color:#0808088c;
+    }
+
+    .control-formulario .boton-up-file{
+        display: none;
+    }
+    .control-formulario .boton-up-file-fake{
+        background-color:#1259c3 ;
+        border-radius: 8px;
+        color: white;
+        padding: 5px 10px;
+        width: 200px;
+        vertical-align: middle;
+    }
+    .flex{
+        display: flex;
+        justify-content: center;
+    }
+    .control-formulario .interes{
+          
+        display:block;
+        flex-direction: column;
+        justify-content: center;
+        margin: 0px;
+        width: 50%;
+        margin-left: 25%;
+        border-radius: 8px;
+        text-align: left;
+        color:#666;
+    }
+    .create-form .boton-formulario{
+        background-color:#1259c3; ;
+        border: none;
+        font-size: 15px;
+        color:#ffffff;
+        padding: 5px 10px;
+        border-radius: 8px;
+        width: 70%;
+        margin: 0px 0px 10px 0px;
+    }
+
+    .compra-venta{
+        color: #666;
+    }
+
+    .titulo-formulario{
+        font-size: 14px;
+        color:#666;
+    }
+    /*---------------------Footer--------------------------*/
+
+
+    footer{
+        text-align: center;
+        background-color: white;
+        font-family: 'Roboto', sans-serif;
+        margin-top: 1em;
+    }
+    
+    
+    footer h2{
+        color:#666;
+        font-size: 15px; 
+    }
+    
+    footer p{
+        color:#0808088c;
+        
+    }
+    
+    
+    .logo-footer{
+        color:#1259c3;
+        margin-bottom:10px;
+        font-size: 1em;
+    }
+    
+    .p-footer{
+        margin-bottom:3em;
+        font-size: 13px; 
+    }
+
+    .copyright{
+        font-size: 13px;
+        color:#0808088c;
+
     }
 }
 
 @media (min-width: 769px) {
 
-    .copy-header{
-        max-width: 350px;
-        text-align: right;
+    
+    .main-navbar ul li a{
+        font-size: 15px;
     }
-
     .hamburguer-button{
         display:none
     }
@@ -397,17 +634,23 @@ footer p{
 
     .main-navbar ul{
         display: flex;
+        font-size: 13px;
     }
 
     .main-navbar li{
         margin: 0 5px;
+        
     }
     .descripcion{
                 display:contents;
+                font-weight: bold;
+                color: #0808088c;
+                font-size: 13px;
     }
     .p-container{
         display: flex;
         justify-content: space-evenly;
+        
     }
     .main-header-top-bar{
         align-items: center;
@@ -417,11 +660,12 @@ footer p{
     .product-card{
         box-shadow: 0px 0px 10px rgb(100, 100, 100); 
         background-color: white; 
-        margin: 30px; 
+        margin: 15px; 
     }
     .product-data{
         display: flex;
         flex-direction: column;
+        
 
     }
     .logo-envio{
@@ -429,6 +673,7 @@ footer p{
         margin-right:20px;
         margin-top: 0;
         margin-bottom: 0;
+        box-shadow: 0px 0px 10px rgba(104, 212, 162, 0.507);
         
     }
     .precio-descuento{
@@ -442,12 +687,14 @@ footer p{
         font-size: 15px;
         display: inline;
         margin: 20px;
+        font-weight: bold;
     }
     .descuentos{
         font-size: 13px;
         font-weight: bold;
         display: inline;
         margin: 20px;
+        font-weight: bold;
     }
     #buscador{
         width:300px;
@@ -467,11 +714,121 @@ footer p{
     margin: 0;
     max-width: none;
     text-align: right;
-    font-size: 22px;
+    font-size: 15px;
 }
+.img-producto{
+    width: 250px;
+    height: 250px;
+    box-shadow : 0px 0px 10px rgb( 100 , 100 , 100 );
+}
+
+
+ /*------------Estilos Login y Register----------------*/
+    
+ .control-formulario .nombre1{
+    width: 70%;
+    padding: 8px;
+    border-radius: 8px;
+    border: none;
+    font-size: 13px;
+    color:#0808088c;
+}
+
+.flex{
+    display: flex;
+    justify-content: center;
+}
+.control-formulario .boton-up-file{
+    display: none;
+}
+.control-formulario .boton-up-file-fake{
+    background-color:#1259c3 ;
+    border-radius: 8px;
+    color: white;
+    padding: 5px 10px;
+    width: 50%;
+    vertical-align: middle;
+}
+.control-formulario .interes{
+      
+    display:block;
+    flex-direction: column;
+    justify-content: center;
+    margin: 0px;
+    width: 50%;
+    margin-left: 25%;
+    border-radius: 8px;
+    text-align: left;
+    color:#666;
+}
+.create-form .boton-formulario{
+    background-color:#1259c3; ;
+    border: none;
+    font-size: 15px;
+    color:#ffffff;
+    padding: 5px 10px;
+    border-radius: 8px;
+    width: 70%;
+    margin: 0px 0px 10px 0px;
+}
+
+.compra-venta{
+    color: #666;
+}
+
+.titulo-formulario{
+    font-size: 14px;
+    color:#666;
+}
+/*---------------------Footer--------------------------*/
+
+
+footer{
+    text-align: center;
+    background-color: white;
+    font-family: 'Roboto', sans-serif;
+    margin-top: 1em;
+}
+
+
+footer h2{
+    color:#666;
+    font-size: 15px; 
+}
+
+footer p{
+    color:#0808088c;
+    
+}
+
+
+.logo-footer{
+    color:#1259c3;
+    margin-bottom:10px;
+    font-size: 1em;
+}
+
+.p-footer{
+    margin-bottom:3em;
+    font-size: 13px; 
+}
+
+.copyright{
+    font-size: 13px;
+    color:#0808088c;
+
+}
+
 }
 
 @media  (min-width:1200px) {
+    
+    .copy-header{
+        margin: 0;
+        max-width: none;
+        text-align: right;
+        font-size: 15px;
+    }
     
     .img-banner{
         height: 20vh;
@@ -541,6 +898,7 @@ footer p{
         margin-right:20px;
         margin-top: 0;
         margin-bottom: 0;
+        box-shadow: 0px 0px 10px rgba(104, 212, 162, 0.507);
         
     }
     .precio-descuento{
@@ -564,3 +922,88 @@ footer p{
         margin: 20px;
     }
 }
+
+
+/*-------------------------Estilos Formulario Login y Register------------------------------*/
+
+.create-form{
+    padding: 20px 15px;
+}
+
+.control-formulario{
+    margin-bottom: 15px;
+}
+
+.control-formulario label{
+    margin-bottom: 5px;
+    font-style:'Roboto';
+    display: block;
+}
+
+.control{
+    width: 30%;
+    padding: 8px;
+    border-radius: 8px;
+    border: none;
+}
+
+.boton-formulario{
+    background-color:#1259c3; ;
+    border: none;
+    font-size: 20px;
+    color:#ffffff;
+    padding: 5px 10px;
+    border-radius: 8px;
+    width: 100px;
+    margin: 20px;
+}
+
+input:invalid{
+        background-color: rgba(192, 46, 71, 0.555);
+      }
+      
+
+input{
+          background-color: white;
+      }
+      
+.nombre1:invalid + .input::after {
+        
+        width: 180px;
+        height: 31px;
+        position: absolute;
+        
+        color:red;
+        content: "Minimo tres caracteres";
+      }
+
+      .nombre1:invalid + .input1::after {
+        
+        width: 180px;
+        height: 31px;
+        position: absolute;
+        
+        color:red;
+        content: "Minimo diez caracteres";
+      }
+
+      .nombre1:invalid + .input-date::after {
+        
+        width: 180px;
+        height: 31px;
+        position: absolute;
+        
+        color:red;
+        content: "Minimo 01/01/2003";
+      }
+
+
+      .interes{
+          
+          display:inline-block;
+          flex-direction: column;
+          justify-content: center;
+          
+          width: 20%;
+          text-align: left;
+      }

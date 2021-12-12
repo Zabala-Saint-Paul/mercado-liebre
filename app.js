@@ -17,3 +17,16 @@ app.get('', (req,res) =>{
    
     res.sendFile((__dirname + '/views/home.html'));  // Permite enviar un archivo HTML
 });
+app.get('/1', (req,res) =>{
+   
+    res.sendFile((__dirname + '/views/formulario.html'));  // Permite enviar un archivo HTML
+});
+
+app.get('/register', (req,res) =>{
+   
+    res.sendFile((__dirname + '/views/register.html'));  // Permite enviar un archivo HTML
+});
+app.get('/login', (req,res) =>{
+   
+    res.sendFile((__dirname + '/views/login.html'));  // Permite enviar un archivo HTML
+});
