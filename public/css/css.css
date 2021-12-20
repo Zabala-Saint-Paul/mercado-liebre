@@ -461,7 +461,7 @@ footer p{
 
 /*============================MEDIDA ENTRE CELULAR Y TABLET==============================*/
 
-@media  (min-width:362px) and (max-width:768px){
+@media  (min-width:481px) and (max-width:768px){
    
     main{
         width: 100%;
