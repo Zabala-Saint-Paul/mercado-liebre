@@ -5,10 +5,13 @@ const path = require('path');
 const app = express();
 
 //detener servidor es ctrl + c
-app.listen(3000, ()=> {
+/*app.listen(3000, ()=> {
     console.log('El servidor esta prendido')
 })
-
+*/
+app.listen(process.env.PORT || 3000, function(){
+    console.log('Servidor corriendo en el puerto 3000')
+})
 
 app.use(express.static(path.join(__dirname, './public'))); 
 
