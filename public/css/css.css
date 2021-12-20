@@ -9,7 +9,9 @@
     justify-content:space-evenly;
     
 }
-
+.categorias{
+    color: #666;
+}
 .fondo-gris{
     background-color: #ebebeb;
 }
@@ -352,10 +354,18 @@ footer p{
         margin: 20px;
         
     }
+    .categorias{
+        color: #666;
+    }
 
 /*------------Estilos Login y Register----------------*/
     
-    .control-formulario .nombre1{
+    .control-formulario{
+        margin-top: 40px;
+        
+    }    
+
+.control-formulario .nombre1{
         width: 100%;
         padding: 8px;
         border-radius: 8px;
@@ -394,6 +404,7 @@ footer p{
         border-radius: 8px;
         width: 100%;
         margin: 0px 0px 10px 0px;
+        margin-bottom: 40px;
     }
 
     .compra-venta{
@@ -440,6 +451,7 @@ footer p{
     .copyright{
         font-size: 13px;
         color:#0808088c;
+        text-align: center;
 
     }
     
@@ -805,6 +817,7 @@ footer p{
         margin: 20px;
         font-weight: bold;
     }
+
     #buscador{
         width:300px;
         margin: 0 !important;
@@ -814,14 +827,14 @@ footer p{
     .buscador-button{
         display: flex;
         flex-direction: center;
-        border-radius: 0px 8px 8px 0px;
+        
     }
     .buscador-btn{
      
      background-color: white;
          color: grey;
          border: none;
-         border-radius: 8px;
+         border-radius: 0px 8px 8px 0px;
  
  }
  .copy-header{
