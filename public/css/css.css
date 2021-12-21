@@ -768,7 +768,8 @@ footer p{
     }
     .p-container{
         display: flex;
-        justify-content: space-evenly;
+        justify-content: center;
+        flex-wrap: wrap;
         
     }
     .main-header-top-bar{
@@ -781,7 +782,8 @@ footer p{
         box-shadow: 0px 0px 10px rgb(100, 100, 100); 
         background-color: white;
         margin: 15px; 
-        position: relative; 
+        position: relative;
+        
     }
     .product-data{
         display: flex;
@@ -844,8 +846,8 @@ footer p{
     font-size: 15px;
 }
 .img-producto{
-    width: 250px;
-    height: 250px;
+    width: 200px;
+    height: 200px;
     box-shadow : 0px 0px 10px rgb( 100 , 100 , 100 );
 }
 
