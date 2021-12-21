@@ -221,6 +221,7 @@ footer p{
     box-shadow: 0px 0px 10px #39b54a; 
     background-color: white;
     margin: 10px;
+    
 }
 
 .product-card:hover .logo-envio{
@@ -765,6 +766,7 @@ footer p{
                 font-weight: bold;
                 color: #0808088c;
                 font-size: 13px;
+                margin-left: 20px;
     }
     .p-container{
         display: flex;
